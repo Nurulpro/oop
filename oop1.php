@@ -9,16 +9,20 @@ class Person{
     public $age;
 
     public function PersonName(){
-      
+      echo "person name is:".$this->name."<br>";
     }
 
-    public function PersonAge(){
+    public function PersonAge($agvalu){
+        echo"Person age is:".$this->age=$agvalu;
 
     }
 }
 
 $PersonOne = new Person;
-echo $PersonOne->name; 
+// echo $PersonOne->name; 
+$PersonOne->name="Ariful Islam";
+$PersonOne->PersonName();
+$PersonOne->PersonAge("40");
 
 
 
